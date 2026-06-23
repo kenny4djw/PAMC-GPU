@@ -1,4 +1,4 @@
-# PTMC-GPU
+# PAMC-GPU
 
 <!-- editorial: replace ptmc-gpu/ptmc-gpu once the public repository is created -->
 [![CI](https://github.com/ptmc-gpu/ptmc-gpu/actions/workflows/test.yml/badge.svg)](https://github.com/ptmc-gpu/ptmc-gpu/actions/workflows/test.yml)
