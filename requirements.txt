@@ -1,0 +1,13 @@
+# Core numerical + scientific stack (pinned to versions verified across stages 0-9).
+jax==0.10.1            # numerical core (jit + lax.scan); install jax[cuda12] on GPU hosts
+numpy==2.4.4
+scipy==1.17.1          # clustering (kmeans2), statistics
+parmed==4.3.1          # GROMACS top/itp parsing (DO NOT hand-roll a parser)
+pytest==9.0.3
+# Stage 7 trajectory I/O:
+MDAnalysis==2.10.0
+# Stage 8 benchmark heatmaps:
+matplotlib==3.10.8
+# Stage 9 ML-label summary output (parquet):
+pandas==3.0.2
+pyarrow==24.0.0

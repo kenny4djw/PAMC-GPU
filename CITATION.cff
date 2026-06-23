@@ -1,0 +1,78 @@
+cff-version: 1.2.0
+message: >-
+  If you use PTMC-GPU in academic work, please cite both the software (this
+  CITATION file) and the accompanying JCIM article (preferred-citation block
+  below). The software DOI is from Zenodo; the article DOI will be filled in at
+  proof stage.
+title: "PTMC-GPU: a JAX-accelerated population-annealing and parallel-tempering sampler for protein adsorption orientation on solid surfaces"
+abstract: >-
+  PTMC-GPU is an open-source, GPU-accelerated rigid-body Monte Carlo sampler
+  for protein adsorption on solid surfaces. The numerical core is written in
+  JAX (jit + lax.scan, fully vmap-ed over the walker/replica batch axis) and
+  runs unchanged on CPU or GPU. Two complementary samplers are provided:
+  parallel tempering (PT) for orientation statistics and population annealing
+  (PA) for a direct standard-state adsorption free-energy estimate via the
+  Hill / Gilson surface-excess formalism. Validated quantitatively against
+  per-residue PMF and QCM-D literature for uncharged Au(111) (Tier 1), and
+  qualitatively for orientation on charged oxide surfaces (Tier 3).
+type: software
+version: "1.0.0"
+# date-released: TO_BE_FILLED_AT_RELEASE   # YYYY-MM-DD of the v1.0.0 tag
+license: MIT
+repository-code: "https://github.com/UNFILLED_ACCOUNT/ptmc-gpu"
+# url: "https://github.com/UNFILLED_ACCOUNT/ptmc-gpu"
+# doi: "10.5281/zenodo.UNFILLED_ZENODO_DEPOSIT"   # Zenodo concept DOI
+authors:
+  - family-names: "UNFILLED_FAMILY"
+    given-names: "UNFILLED_GIVEN"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+    # affiliation: "UNFILLED_AFFILIATION"
+keywords:
+  - "protein adsorption"
+  - "Monte Carlo"
+  - "population annealing"
+  - "parallel tempering"
+  - "JAX"
+  - "GPU"
+  - "implicit solvent"
+  - "adsorption free energy"
+  - "protein orientation"
+references:
+  - type: article
+    title: "Population Annealing with Weighted Averages: A Monte Carlo Method for Rough Free-Energy Landscapes"
+    authors:
+      - family-names: Machta
+        given-names: J.
+    journal: "Phys. Rev. E"
+    year: 2010
+    volume: 82
+    issue: 2
+    start: 026704
+    doi: 10.1103/PhysRevE.82.026704
+  - type: article
+    title: "Population Annealing: Theory and Application in Spin Glasses"
+    authors:
+      - family-names: Wang
+        given-names: W.
+      - family-names: Machta
+        given-names: J.
+      - family-names: Katzgraber
+        given-names: H. G.
+    journal: "Phys. Rev. E"
+    year: 2015
+    volume: 92
+    issue: 6
+    start: 063307
+    doi: 10.1103/PhysRevE.92.063307
+preferred-citation:
+  type: article
+  title: "PTMC-GPU: a JAX-accelerated population-annealing and parallel-tempering sampler for protein adsorption orientation on solid surfaces"
+  authors:
+    - family-names: "UNFILLED_FAMILY"
+      given-names: "UNFILLED_GIVEN"
+  journal: "J. Chem. Inf. Model."
+  year: 2026
+  # volume: TO_BE_FILLED_AT_ACCEPT
+  # issue: TO_BE_FILLED_AT_ACCEPT
+  # start: TO_BE_FILLED_AT_ACCEPT
+  # doi: TO_BE_FILLED_AT_ACCEPT
