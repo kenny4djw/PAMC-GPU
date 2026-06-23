@@ -1,0 +1,49 @@
+;
+;	File 'data/4CHA.top' was generated
+;	By user: djw (1001)
+;	On host: 192.168.18.161
+;	At date: Mon Jun  1 11:06:42 2026
+;
+;	This is a standalone topology file
+;
+;	Created by:
+;	                    :-) GROMACS - gmx pdb2gmx, 2024.2 (-:
+;	
+;	Executable:   /opt/software/gmx2024/bin/gmx
+;	Data prefix:  /opt/software/gmx2024
+;	Working dir:  /home/djw/ptmc_package
+;	Command line:
+;	  gmx pdb2gmx -f data/4CHA_prot.pdb -o data/4CHA_processed.pdb -p data/4CHA.top -i data/4CHA.itp -water tip3p -ff amber99sb-ildn -ignh
+;	Force field was read from the standard GROMACS share directory.
+;
+
+; Include forcefield parameters
+#include "amber99sb-ildn.ff/forcefield.itp"
+
+; Include chain topologies
+#include "4CHA_Protein_chain_A.itp"
+#include "4CHA_Protein_chain_B.itp"
+#include "4CHA_Protein_chain_C.itp"
+
+; Include water topology
+#include "amber99sb-ildn.ff/tip3p.itp"
+
+#ifdef POSRES_WATER
+; Position restraint for each water oxygen
+[ position_restraints ]
+;  i funct       fcx        fcy        fcz
+   1    1       1000       1000       1000
+#endif
+
+; Include topology for ions
+#include "amber99sb-ildn.ff/ions.itp"
+
+[ system ]
+; Name
+Protein
+
+[ molecules ]
+; Compound        #mols
+Protein_chain_A     1
+Protein_chain_B     1
+Protein_chain_C     1
